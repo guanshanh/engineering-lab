@@ -1,0 +1,21 @@
+[project]
+name = "chroma"
+version = "0.1.0"
+description = "ChromaDB + SiliconFlow Embedding 工程实践项目"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "chromadb",
+    "requests",
+    "python-dotenv",
+    "pydantic",
+    "numpy",
+    "pandas",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["core"]

@@ -1,0 +1,12 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+
+data/chroma_db/
+# 保留示例文档入库；仅忽略本地临时草稿
+data/documents/_local/
+
+*.egg-info/
+dist/
+build/
